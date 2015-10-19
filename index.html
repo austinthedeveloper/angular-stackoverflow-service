@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+  <!-- Angular Material Dependencies -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.js"></script>
+    
+  <script src="app.js"></script>
+  <script src="stack-overflow.js"></script>
+</head> 
+
+<body ng-app="plnkrApp" ng-controller="DemoController">
+  <md-content class="md-padding">
+    <md-card>
+      <md-toolbar md-scroll-shrink>
+        <div class="md-toolbar-tools">Stack Overflow API</div>
+      </md-toolbar>
+      <md-card-content style="height:500px; overflow: auto">
+        <section>
+        <md-subheader class="md-primary">Profile</md-subheader>
+        <stack-overflow user-id="2404112"></stack-overflow>
+        </section>
+        <section>
+        <md-subheader class="md-primary">Badges</md-subheader>
+        <stack-badges user-id="2404112"></stack-badges>
+        </section>
+      </md-card-content>
+    </md-card>
+  </md-content>
+
+  
+
+
+</body>
+
+</html>

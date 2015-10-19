@@ -1,0 +1,9 @@
+<md-list>
+  <md-list-item class="md-2-line" ng-repeat="badge in badges">
+    <img ng-src="{{badge.user.profile_image}}" class="md-avatar" alt="{{badge.user.display_name}}" />
+    <div class="md-list-item-text">
+      <h3>{{ badge.name }}</h3>
+      <p>{{badge.description}}</p>
+    </div>
+  </md-list-item>
+</md-list>
